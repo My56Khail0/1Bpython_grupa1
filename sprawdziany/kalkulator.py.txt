@@ -1,0 +1,62 @@
+import math
+
+def dodawanie(a, b):
+    return a + b
+
+def odejmowanie(a, b):
+    return a - b
+
+def mnozenie(a, b):
+    return a * b
+
+def dzielenie(a, b):
+    if b != 0:
+        return a / b
+    else:
+        return "Nie można dzielić przez zero!"
+
+def potegowanie(a, b):
+    return a ** b
+
+def reszta_dzielenia(a, b):
+    if b != 0:
+        return a % b
+    else:
+        return "Nie można dzielić przez zero!"
+
+def pierwiastek(a, b):
+    return round(math.pow(a, 1/b),4)
+
+
+def dzielenie_calkowite(a, b):
+  if b != 0:
+      return a // b
+  else:
+      return "Nie można dzielić przez zero!"
+
+while True:
+  # Testowanie działania kalkulatora
+  a =int(input("podaj liczbę: "))
+  b =int(input("podaj liczbę: "))
+  c=int(input("podaj sposob dzialania:\n1-dodawanie\n2-odejmowanie\n3-mnożenie\n4-dzielenie\n5-potęgowanie\n6-reszta z dzielenia\n7-pierwiastek\n8-dzielenie całkowite\n "))
+  if c== 1:
+    print(f"Dodawanie: {dodawanie(a, b)}")
+  if c== 2:
+    print(f"Odejmowanie: {odejmowanie(a, b)}")
+  if c== 3:
+    print(f"Mnożenie: {mnozenie(a, b)}")
+  if c== 4:
+    print(f"Dzielenie: {dzielenie(a, b)}")
+  if c== 5:
+    print(f"Potęgowanie: {potegowanie(a, b)}")
+  if c== 6:
+    print(f"Reszta z dzielenia: {reszta_dzielenia(a, b)}")
+  if c== 7:
+    print(f"Pierwiastek: {pierwiastek(a, b)}")
+  if c== 8:
+    print(f"Dzielenie Calkowite:{dzielenie_calkowite(a, b)}")
+  elif c>8:
+    print("Błedny wybór")
+  odpowiedz=(input("Czy chcesz kontynuować?\n Tak/Nie\n"))
+  if odpowiedz.upper() == "NIE":
+    break
