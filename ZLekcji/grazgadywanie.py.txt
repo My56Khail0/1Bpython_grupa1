@@ -1,0 +1,41 @@
+liczba_do_zgadniecia = 7
+licznik_zgadniec = 0
+limit_zgadniec = 3
+while licznik_zgadniec < limit_zgadniec:
+  liczba_zgadywana = int(input("\nwpisz liczbę "))
+  if liczba_zgadywana  == liczba_do_zgadniecia:
+    print("\nWygrałeś")
+    break
+  print(f"\nmasz jeszcze {limit_zgadniec - licznik_zgadniec - 1} szans")
+  licznik_zgadniec += 1
+  if licznik_zgadniec == limit_zgadniec:
+    print("\nSorry, ale przegrałeś")
+# else:
+#   print("Sorry, ale przegrałeś")
+
+
+# import random
+# # https://www.w3schools.com/python/ref_random_randint.asp
+
+# guess_number = 7  
+# # guess_number = random.randint(1,10)  #start and stop both included
+# # guess_number = random.randrange(1,11) #not include endpoint
+# guess_limit = 3
+# guess_counter = 0
+# while  guess_counter< guess_limit:
+#   guess_counter +=1
+#   guess = int(input("\nZgadnij liczbę 1 do 10:  "))
+#   if guess == guess_number:
+#     print(f"#########  Wygrałeś liczbą była {guess_number}  #########")
+#     break
+#   # if guess_counter == guess_limit:
+#   #   print("\n%%%% Przegrałeś %%%%")
+#   # print(f"Pozostało Ci {guess_limit - guess_counter} szans")
+# else: #jak się wykona pętla while i nie będzie break to wtedy tu przyjdzie
+#   print("\n%%%% Przegrałeś %%%%")
+
+
+
+
+  
+    
